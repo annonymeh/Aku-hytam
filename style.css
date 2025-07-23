@@ -1,0 +1,138 @@
+/* --- File: style.css --- */
+
+/* Basic Resets & Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Warna latar belakang lembut */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #2c3e50; /* Biru tua elegan */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Section Styling */
+section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #1a5276; /* Biru yang lebih cerah */
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Contact Info Section */
+#contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#contact-info strong {
+    color: #0d47a1; /* Biru lebih gelap untuk penekanan */
+}
+
+#contact-button {
+    background-color: #28a745; /* Hijau cerah untuk tombol */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    display: block; /* Membuat tombol mengambil lebar penuh */
+    margin: 20px auto 0 auto; /* Tengah tombol */
+    max-width: 250px; /* Batasi lebar tombol */
+}
+
+#contact-button:hover {
+    background-color: #218838; /* Warna hijau sedikit lebih gelap saat hover */
+}
+
+/* Opening Hours Section */
+#hours ul {
+    list-style: none; /* Hilangkan bullet default */
+    padding: 0;
+    text-align: center;
+}
+
+#hours ul li {
+    background-color: #e3f2fd; /* Latar belakang item daftar yang lembut */
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    border-left: 5px solid #64b5f6; /* Garis biru di kiri */
+}
+
+/* Products Section */
+.search-bar {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-bar label {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px 15px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #1a5276;
+    outline: none;
+}
+
+#product-list {
+    list-style: none;
+    padding: 0;
+    display: grid; /* Menggunakan Grid untuk tata letak produk */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Kolom responsif */
+    gap: 25px; /* Jarak antar item grid */
+}
+
+#product-list
